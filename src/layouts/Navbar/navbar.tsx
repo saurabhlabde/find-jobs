@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import JobIcon from "@assets/job.svg";
+import { JobIcon } from "@assets/index";
 
 const Navbar: FC = () => {
   return (

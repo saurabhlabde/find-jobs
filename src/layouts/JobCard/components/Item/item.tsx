@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import LocationIcon from "@assets/location.svg";
+import { LocationIcon } from "@assets/index";
 
 const Item: FC = () => {
   return (

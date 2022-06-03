@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import SearchIcon from "@assets/search.svg";
+import { SearchIcon } from "@assets/index";
 
 const SearchInput: FC = () => {
   return (

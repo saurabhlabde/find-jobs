@@ -1,0 +1,8 @@
+{
+        "cSpell.enableFiletypes": [
+                "markdown"
+        ],
+        "files.exclude": {
+                "node_modules": true
+        }
+}

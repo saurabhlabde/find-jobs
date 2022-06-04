@@ -1,10 +1,14 @@
 import { FC } from "react";
 import Head from "next/head";
 
-const HeadTag: FC = () => {
+import { IHeadTagProps } from "./headTag.d";
+
+const HeadTag: FC<IHeadTagProps> = ({ props }) => {
+  const title = props?.title ?? "FindJobs";
+
   return (
     <Head>
-      <title>Find Jobs</title>
+      <title>{title}</title>
       <meta name="description" content="find jobs" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />

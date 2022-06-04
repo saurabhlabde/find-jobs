@@ -11,7 +11,7 @@ const Navbar: FC = () => {
   return (
     <div className="flex flex-row h-20 px-10 ">
       <div
-        className="flex items-center justify-center cursor-pointer"
+        className="flex items-center justify-center lg:justify-start cursor-pointer w-full"
         onClick={redirectHandel}
       >
         <JobIcon />

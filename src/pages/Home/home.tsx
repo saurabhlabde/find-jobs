@@ -22,7 +22,7 @@ const HomePage: FC = () => {
           <Navbar />
         </div>
 
-        <div className="w-full flex items-center justify-center mt-14">
+        <div className="w-full px-[15px] md:px-0 flex items-center justify-center mt-14">
           <SearchInput
             props={{
               redirect: true,
@@ -30,7 +30,7 @@ const HomePage: FC = () => {
           />
         </div>
 
-        <div className="flex flex-row flex-wrap justify-center mt-20">
+        <div className="px-[15px] md:px-0 flex flex-row flex-wrap justify-center mt-20">
           {items?.map((item, i) => {
             return <JobCard key={i} props={item} />;
           })}

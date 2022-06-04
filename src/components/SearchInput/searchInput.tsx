@@ -35,7 +35,7 @@ const SearchInput: FC<ISearchInputProps> = ({ props }) => {
 
   return (
     <div
-      className={`${background} h-12 w-[500px] flex flex-row items-center rounded-full ease-in duration-200`}
+      className={`${background} h-12 w-full md:w-[500px] flex flex-row items-center rounded-full ease-in duration-200`}
       onClick={redirectHandel}
     >
       <div className="h-full w-full">

@@ -24,7 +24,7 @@ const DetailsPage: FC<IDetailsProps> = ({ props }) => {
         </div>
 
         <div className="w-full flex justify-center mt-5">
-          <div className="w-2/5">
+          <div className="w-full md:w-2/3 lg:w-2/3 xl:w-3/6 2xl:w-1/3 mx-[15px] md:mx-0">
             <DetailsCard props={items} />
           </div>
         </div>

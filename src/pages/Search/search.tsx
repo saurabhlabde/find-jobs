@@ -24,7 +24,7 @@ const SearchPage: FC = () => {
           <Navbar />
         </div>
 
-        <div className="w-full flex items-center justify-center mt-14">
+        <div className="w-full px-[15px] md:px-0 mt-14 flex items-center justify-center">
           <SearchInput
             props={{
               value: searchValue,
@@ -33,7 +33,7 @@ const SearchPage: FC = () => {
           />
         </div>
 
-        <div className="flex flex-row flex-wrap justify-center mt-20">
+        <div className="mt-20 px-[15px] md:px-0 flex flex-row flex-wrap justify-center">
           {items?.map((item, i) => {
             return <JobCard key={i} props={item} />;
           })}

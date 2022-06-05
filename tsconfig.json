@@ -20,7 +20,8 @@
       "@layouts/*": ["./src/layouts/*"],
       "@pages/*": ["./src/pages/*"],
       "@data/*": ["./src/data/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@graphql/*": ["./src/apollo/*"]
     }
   },
   "plugins": [

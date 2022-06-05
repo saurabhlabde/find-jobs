@@ -2,8 +2,16 @@ import type { NextPage } from "next";
 
 import { HomePage } from "@pages/index";
 
-const Home: NextPage = () => {
-  return <HomePage />;
+import JobsData from "@data/jobs.json";
+
+const Home: NextPage<any> = () => {
+  return (
+    <HomePage
+      props={{
+        jobs: [],
+      }}
+    />
+  );
 };
 
 export default Home;

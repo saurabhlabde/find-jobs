@@ -15,14 +15,15 @@ const JobCard: FC<IJobCardProps> = ({ props }) => {
   const location = props?.locationNames ?? "-";
   const compony = props?.company?.name ?? "-";
   const tags = props?.tags ?? [];
-  const slug = props?.slug ?? [];
+  const jobSlug = props?.slug ?? [];
+  const companySlug = props?.company?.slug ?? [];
 
   const cardClickHandel = () => {
     return Router.push({
       pathname: `/d/${id}`,
       query: {
-        companySlug: "company slug",
-        jobSlug: "job slug",
+        jobSlug,
+        companySlug,
       },
     });
   };
@@ -33,13 +34,11 @@ const JobCard: FC<IJobCardProps> = ({ props }) => {
       onClick={cardClickHandel}
     >
       <div className="flex flex-row items-center">
-        {profile && (
-          <Profile
-            props={{
-              name: profile,
-            }}
-          />
-        )}
+        <Profile
+          props={{
+            name: profile,
+          }}
+        />
 
         {title && (
           <div className="ml-2">

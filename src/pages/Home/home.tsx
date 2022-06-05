@@ -4,10 +4,14 @@ import { HeadTag, SearchInput } from "@components/index";
 
 import { Navbar, JobCard } from "@layouts/index";
 
-import JobsData from "@data/jobs.json";
+import { homeHook } from "./home.hook";
 
-const HomePage: FC = () => {
-  const items = JobsData;
+import { IHomeProps } from "./home.d";
+
+const HomePage: FC<IHomeProps> = ({ props }) => {
+  const { isLoading, jobsData } = homeHook();
+
+  if (isLoading) return <h1>Loading...</h1>;
 
   return (
     <div>
@@ -31,7 +35,7 @@ const HomePage: FC = () => {
         </div>
 
         <div className="px-[15px] md:px-0 flex flex-row flex-wrap justify-center mt-20">
-          {items?.map((item, i) => {
+          {jobsData?.map((item, i) => {
             return <JobCard key={i} props={item} />;
           })}
         </div>

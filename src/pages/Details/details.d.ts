@@ -1,9 +1,12 @@
 
+interface IProps {
+        jobSlug: string | string[] | undefined
+        companySlug: string | string[] | undefined
+}
 interface IDetailsProps {
-        props: {
-                jobSlug: string | string[] | undefined
-                companySlug: string | string[] | undefined
-        }
+        props: IProps
 }
 
-export { IDetailsProps }
+
+
+export { IDetailsProps, }

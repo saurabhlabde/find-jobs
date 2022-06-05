@@ -25,13 +25,11 @@ const DetailsCard: FC<IDetailsCardProps> = ({ props }) => {
     <div>
       <div className="bg-primary px-[15px] pt-[15px] pb-[20px] rounded-[15px] w-full m-[5px]">
         <div className="flex flex-row items-center">
-          {profile && (
-            <Profile
-              props={{
-                name: profile,
-              }}
-            />
-          )}
+          <Profile
+            props={{
+              name: profile,
+            }}
+          />
 
           {title && (
             <div className="ml-2">
